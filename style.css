@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+
+    font-family: 'Open sans', sans-serif;
+}
+.contenedor{
+    width: 100uh;
+    max-width:1000px;
+    overflow:hedden;
+    margin: auto;
+    padding: 50px 0;
+}
+.header{
+   
+    background-image: url("/styles/SGN_07_20_2022_1658366784763.jpeg");
+    width: 1000px;
+    height: 1000px;
+    margin: 0;
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+   position:center;
+     
+
+}
+.head{
+text-align: center;
+    padding: 10%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: royalblue;
+    
+}
+.hamburguer{
+    position:fixed;
+    top: 30px;
+    right:30px;
+    background: aliceblue;
+    width: 40px;
+    height: 40px;
+    crusor: pointer;
+    border-radius: 10px;
+    
+    
+}
+.menu-navegacion{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px aliceblue;
+    
+}
+.spread{
+    transform: translate(0);
+}
+.menu-navegacion a{
+    color:aliceblue;
+    text-decoration: nane;
+}
+ 
+.titulo{
+font-size: 60px;
+margin-bottom: 25px;
+    
+}
+.copy{
+font-width: 300;
+font-size: 25px;
+
+}
+/* nuestro servicio */
+.subtitulo{
+    text-align: center;
+    font-width: 300;
+    color: blue;
+    margin-bottom: 40px;
+    font-size:40px;
+}
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-everly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-servicio img{
+    width: 50%;
+    
+}
+.checklist-servicio{
+    width: 20%;
+    margin-right: 100px;
+    
+}
+.service{
+    margin-bottom: 40px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #9f8ad0;
+    
+}
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-width: 700;
+    line-height: 30px;
+    margin-right: 5px;
+    
+}
+/* galeria */
+.gallery{
+    background: #f2f2f2;
+}
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.img-galeria{
+object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0, .5);
+    crusor: pointer;
+    
+}
+.imagen-light{
+    position: fixed;
+    background: rgba(0,0,0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.show{
+    transform: translate(0);
+}
+.agregar-imagen{
+   object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    crusor: pointer;
+    
+}
+
+/* esperto */
+.expert{
+    display: flex;
+justify-content: space-evenly;
+    align-items: flex;
+    flex-wrap: wrap;
+    
+}
+
+.cont-expert{
+    width: 40%;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    
+}
+.cont-expert img{
+    width: 100%;
+    display: center;
+    margin:1 auto;
+    justify-content: space-flex;
+}
+.n-expert{
+    display: block;
+    margin: 40px;
+    width: 100%;
+    font-width: 100;
+}
+
+/* footer */
+.footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+    
+}
+.footer-content{
+    display: flex;
+    justify-content: space-batween;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    
+    
+}
+.contact-up{
+width: 40%;
+color: #fff;
+    
+}
+.brand{
+    font-width: 500;
+    font-size: 40px ;
+    
+}
+.brand+p{
+    font-width: 500;
+    
+}
+.social-media{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icon{
+  display: inline-flex;
+  margin-left: 20px;
+  width: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: black;
+  
+}
+
+@media screen and(max-width:800px){
+  .header{
+    width: 100%;
+    background-image: url("/styles/SGN_07_20_2022_1658366784763.jpeg" );
+  }
+.contenedor {
+    width: 95%;
+}
+.head{
+  width: 95%;
+}
+    .menu-nevegacion{
+        width: 50vw;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-servicio{
+        width: 80%;
+        
+    }
+    .service{
+        margin-bottom: 30px;
+        
+    }
+    
+    .agragar-imagen{
+        width: 80%;
+    }
+    
+    .img-galeria{
+        width: 40%;
+    }
+    .cont-expert{
+        width: 80%;
+    }
+    .footer-content{
+        justify-content: center; 
+    }
+    
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+        
+    }
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        
+    }
+    
+}
+ 
+ @media screen and (max-width:500px){
+   .header{
+     width: 100%;
+   }
+ .contenedor {
+     width: 95%;
+ }
+ .head{
+   width: 100%;
+ }
+     .menu-navegacion{
+         width: 65vw;
+     }
+     .hamburguer{
+         top:20px
+         right: 20px;
+     }
+     .titulo{
+         font-size: 30px;
+     }
+     .subtitulo{
+         font-size:30px;
+     }
+     .img-galeria{
+         width: 95%;
+     }
+     .agragar-imagen{
+         width: 95%;
+     }
+     
+     
+     
+     
+        .cont-expert{
+        width: 80%;
+    }
+    .footer-content{
+        justify-content: center; 
+    }
+    
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+        
+    }
+    .contact-us{
+        text-align: center;
+        width: 80%;
+     
+ }
